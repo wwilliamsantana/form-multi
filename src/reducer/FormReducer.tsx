@@ -1,4 +1,4 @@
-enum FormActions {
+export enum FormActions {
   setCurretnStep,
   setName,
   setLevel,

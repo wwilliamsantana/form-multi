@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useReducer } from "react";
+import { createContext, ReactNode, useReducer } from "react";
 import {ActionProps, formReducer, initialData, InitialDataProps } from "../reducer/FormReducer";
 
 
@@ -7,7 +7,7 @@ interface FormContextProps{
   dispatch: (action: ActionProps) => void
 }
 
-export const FormContext = createContext({} as FormContextProps)
+export const FormContext = createContext<FormContextProps | undefined>(undefined)
 
 
 interface FormProviderProps{
