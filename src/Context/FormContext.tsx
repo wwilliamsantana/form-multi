@@ -7,7 +7,7 @@ interface FormContextProps{
   dispatch: (action: ActionProps) => void
 }
 
-export const FormContext = createContext<FormContextProps | undefined>(undefined)
+export const FormContext = createContext({} as FormContextProps)
 
 
 interface FormProviderProps{
