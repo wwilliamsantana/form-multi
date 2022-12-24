@@ -39,7 +39,7 @@ export function FormStep2(){
   }, [])
 
   return (
-    <Theme>
+
       <Container>
         <p>Passo 2/3</p>
         <h1>{state.name}, o que melhor descreve você?</h1>
@@ -66,6 +66,6 @@ export function FormStep2(){
         <button onClick={handleNextStep}>Próximo</button>
       
       </Container>
-    </Theme>
+
   )
 }

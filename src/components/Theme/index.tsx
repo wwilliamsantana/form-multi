@@ -1,15 +1,14 @@
 import { User } from "phosphor-react";
 import { ReactNode, useContext } from "react";
+import { Outlet } from "react-router-dom";
 import { FormContext } from "../../Context/FormContext";
 import { Header } from "../Header";
 import { SidebarItem } from "../SidebarItem";
 import { Area, Container, Page, Sidebar, Steps } from "./styles";
 
-interface ThemProps{
-  children: ReactNode
-}
 
-export function Theme({children}: ThemProps){
+
+export function Theme(){
   const {state} = useContext(FormContext)
 
   return (
@@ -49,7 +48,7 @@ export function Theme({children}: ThemProps){
           </Sidebar>
 
           <Page>
-            {children}
+            <Outlet/>
           </Page>
         </Steps>
       </Area>

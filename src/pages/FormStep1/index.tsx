@@ -33,7 +33,7 @@ export function FormStep1(){
   }, [])
 
   return (
-    <Theme>
+
       <Container>
         <p>Passo 1/3</p>
         <h1>Vamos começar com seu nome</h1>
@@ -51,6 +51,6 @@ export function FormStep1(){
 
         <button onClick={handleNextStep}>Próximo</button>
       </Container>
-    </Theme>
+
   )
 }

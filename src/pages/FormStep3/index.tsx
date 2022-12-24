@@ -44,7 +44,7 @@ export function FormStep3(){
   }, [])
 
   return (
-    <Theme>
+   
       <Container>
         <p>Passo 3/3</p>
         <h1>Legal {state.name}, onde te achamos?</h1>
@@ -70,6 +70,6 @@ export function FormStep3(){
         <Nav to={"/step2"}>Voltar</Nav>
         <button onClick={handleNextStep}>Finalizar cadastro</button>
       </Container>
-    </Theme>
+
   )
 }
