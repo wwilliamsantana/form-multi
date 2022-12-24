@@ -27,7 +27,8 @@ export const initialData: InitialDataProps  = {
   github: ""
 }
 
-export function formReducer(state: any, action: ActionProps){
+export function formReducer(state: InitialDataProps, action: ActionProps){
+  console.log(state)
   switch(action.type){
     case FormActions.setCurretnStep:{
       return {...state, currentStep: action.payload}
@@ -44,6 +45,6 @@ export function formReducer(state: any, action: ActionProps){
     case FormActions.setGithub:{
       return {...state, github: action.payload}
     }
-    default: state
+    default: return state
   }
 }
