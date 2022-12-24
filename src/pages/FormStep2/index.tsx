@@ -12,7 +12,7 @@ export function FormStep2(){
 
   function handleNextStep(){
     if(state.name !== ""){
-      navigate("/step2")
+      navigate("/step3")
     }else{
       alert("Preencha seus dados!")
     } 
