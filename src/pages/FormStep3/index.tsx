@@ -1,6 +1,5 @@
 import { ChangeEvent, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Theme } from "../../components/Theme";
 import { FormContext } from "../../Context/FormContext";
 import { FormActions } from "../../reducer/FormReducer";
 import { Container, Nav } from "./styles";

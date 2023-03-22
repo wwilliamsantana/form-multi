@@ -28,7 +28,7 @@ export const initialData: InitialDataProps  = {
 }
 
 export function formReducer(state: InitialDataProps, action: ActionProps){
-  console.log(state)
+
   switch(action.type){
     case FormActions.setCurretnStep:{
       return {...state, currentStep: action.payload}
