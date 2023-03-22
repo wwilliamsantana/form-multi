@@ -16,7 +16,7 @@ export const Container = styled.div`
   hr{
     height: 1px;
     border: 0;
-    background-color: #16195C;
+    background-color: #7C7C8A;
     margin: 30px 0;
   }
 
